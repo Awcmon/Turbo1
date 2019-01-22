@@ -89,6 +89,7 @@ void Key::press()
 		}
 
 		Sleep(30);
+		//Sleep(1);
 	}
 }
 
@@ -115,7 +116,11 @@ bool Key::isPressed()
 	}
 }
 
-int main()
+//int main()
+int WinMain(HINSTANCE hInstance,
+	HINSTANCE hPrevInstance,
+	LPSTR    lpCmdLine,
+	int       cmdShow)
 {
 	srand(time(NULL));
 
@@ -147,8 +152,8 @@ int main()
 					turbo = &keyVec[i];
 					break;
 				}
-				
 			}
+			Sleep(100);
 		}
 		else
 		{
